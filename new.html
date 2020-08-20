@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>略字　投稿ページ</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/bcaa78cd93.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div class="container"> 
+      <a class="home-link" href="top.html">ホーム</a>
+      <ul class="header-menu">
+        <li><a href="about.html">投稿一覧</a></li>
+        <li><a href="login.html">新規投稿</a></li>
+        <li class="dropdown">
+          <a href="#"><i class="fas fa-bars"></i></a>
+          <ul>
+            <li><a href="profile.html">マイページ</a></li>
+            <li><a href="#">ログアウト</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <ul class="draw-btn">
+      <div class="container">
+        <li class="btn"><a href="#">鉛筆</a></li>
+        <li class="btn"><a href="#">消しゴム</a></li>
+        <li class="btn"><a href="#">太さ</a></li>
+        <li class="btn"><a id="clear-button" href="#">消す</a></li>
+        <li class="btn"><a href="#">戻る</a></li>
+        <li class="btn"><a href="#">進む</a></li>
+      </div>
+    </ul>
+    <canvas 
+      id= "draw-area"
+      width="400px"
+      height="400px">
+    </canvas>
+    <div class="character-form">
+      <p>何の略字ですか？</p>
+      <input type="">
+    </div>
+    <button type="submit">投稿する</button>
+  </main>
+  <script src="./script.js"></script>
+</body>
+</html>
